@@ -4,12 +4,14 @@ public class lab3task {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Әріп енгізіңіз: ");
+        System.out.print("Әріп енгізіңіз: ");
+        String word = scanner.nextLine();
 
-        char n = scanner.next().charAt(0);
-        int ascii = (int) n;
 
-        System.out.println("ASCII value of that is: " + ascii);
+        char last = scanner.next().charAt(word.length()-1);
+        int asci = (int) last;
+
+        System.out.println("ASCII value of that is: " + asci);
 
     }
 }
